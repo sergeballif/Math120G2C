@@ -1,0 +1,65 @@
+\input{preamble.tex} %% we can turn off input when making a master document
+
+\prerequisites{none}
+\outcomes{ximeraLatex}
+
+\title{Exponential Functions}
+
+\begin{document}
+\begin{abstract}
+We become acquainted with exponential functions and their graphs.
+\end{abstract}
+\maketitle
+
+
+An \emph{exponential function} has the form $y=a^x$, where $a>0$ and $a\ne1$. For example, the function $g(x)=2^x$. We need to know the general shape of an exponential function and its behavior at both extremes. In a separate window go to \url{desmos.com} and create a function $g(x)=a^x$ along with a slider for $a$. Next restrict the values of $a$ so that $0.1<a<10$.
+
+\begin{question}
+Select each true statement below about the exponential function $g(x)=a^x$.
+  \begin{solution}
+    \begin{multiple-choice}
+      \choice[correct]{The point $(0,1)$ belongs to the graph of $y=g(x)$ for all values of $a$.}
+      \choice{When $a<1$ the function $g(x)$ increases in value from left to right.}
+      \choice[correct]{When $a>1$ the function $g(x)$ increases in value from left to right.}
+      \choice[correct]{The output values of $g(x)$ are never negative.}
+      \choice[correct]{The function $g(x)=2^x$ has a horizontal asymptote on the left.}
+    \end{multiple-choice}
+    \begin{hint}
+      A horizontal asymptote is a horizontal line (or $y$-value) that the function output approaches when the $x$-values get large in either the positive or negative direction.
+    \end{hint}
+  \end{solution}
+\end{question}
+
+
+One mathematical constant of significance is the number $e\approx2.718281828$. The function $g(x)=e^x$ is just one exponential function among many, but it shows up in so many contexts that we call it the \emph{natural exponential function}. Add the graph of $y=e^x$ to your Desmos window to compare it to $g(x)=a^x$.
+
+\begin{question}
+Notice that the graph of each exponential function $y=a^x$ is related to the graph of $y=e^x$ by some stretch factor. Is it a horizontal stretch, a vertical stretch, or both? 
+  \begin{solution}
+    \begin{multiple-choice}
+      \choice[correct]{horizontal}
+      \choice{vertical}
+      \choice{both}
+    \end{multiple-choice}
+    \begin{hint}
+      Do all nonzero $x$-values on the graph increase as $a$ increases? What about the nonzero $y$-values?
+    \end{hint}
+  \end{solution}
+\end{question}
+
+\begin{question}
+Which function below grows the fastest as $x$-values get large.
+  \begin{solution}
+    \begin{multiple-choice}
+      \choice{$2^x$}
+      \choice{$e^x$}
+      \choice{$3^x$}
+      \choice[correct]{$5^x$}
+    \end{multiple-choice}
+    \begin{hint}
+      Does a bigger value of $a$ in $g(x)=a^x$ result in a faster increase in $y$-value?
+    \end{hint}
+  \end{solution}
+\end{question}
+
+\end{document}

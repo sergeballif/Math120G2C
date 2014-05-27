@@ -1,0 +1,87 @@
+\documentclass{ximera}
+%% handout
+%% nohints
+%% space
+%% newpage
+%% numbers
+
+\input{preamble.tex} %% we can turn off input when making a master document
+
+\prerequisites{none}
+\outcomes{ximeraLatex}
+
+\title{Function Notation}
+
+\begin{document}
+\begin{abstract}
+We learn about function notation.
+\end{abstract}
+\maketitle
+
+\section*{Recalling Function Notation}
+We can think of a function as a machine that takes an input and returns an output. For example, at an arcade a quarter machine accepts dollars and gives out quarters. If $x$ is the number of dollars, and $Q$ is the number of quarters, then we write $Q(x)=4x$ to denote that when we input $x$ dollars we output $4x$ quarters.
+
+In a nickel arcade the machine might accept $x$ dollars and give out $N$ nickels. In this case the function that governs the machine would be $N(x)=20x$. 
+
+We usually give our functions names like $f(x)$ or $g(x)$ instead of just using the letter $y$. This is so we can keep track of which formula we are using. The notation is a good one. To evaluate a function such as $f(x)=x^2+4x-7$ we simply replace each $x$ with the same input value. For example,
+\begin{itemize}
+\item $f(0)=(0)^2+4(0)-7=-7$,
+\item $f(1)=(1)^2+4(1)-7=-2$,
+\item $f(-5)=(-5)^2+4(-5)-7=-2$.
+\end{itemize}
+As long as we replace each $x$ with the same input we will be fine. 
+
+\begin{question}
+Evaluate each value of the function $f(x)=x-\sqrt{x}$.
+\begin{solution}
+\begin{hint}
+$f(9)=9-\sqrt{9}=9-3=6$. 
+\end{hint}
+$f(9)=$ $\answer{6}$.\\
+$f(1)=$ $\answer{0}$.\\
+$f(16)=$ $\answer{12}$.
+\end{solution}
+\end{question}
+
+\begin{question}
+Evaluate each value of the function $g(x)=\frac{x(x+1)(x-1)}{6}$.
+\begin{solution}
+\begin{hint}
+$g(3)=\frac{(3)\left((3)+1\right)\left((3)-1\right)}{6}$. 
+\end{hint}
+$g(3)=$ $\answer{4}$.\\
+$g(1)=$ $\answer{0}$.\\
+$g(-2)=$ $\answer{-1}$.
+\end{solution}
+\end{question}
+
+
+\section*{Technical Details}
+In higher level math courses we care about the nitty gritty technical details. In this class a working understanding will suffice. We should know that definitions of the terms below.
+
+
+A \emph{relation} from one set to another is a pairing of the elements in the first set with the elements in the second set. Thus a relation is a set of \emph{ordered pairs}.
+
+A \emph{function} is a relation relating two sets called the \emph{domain} and \emph{range} in which each element of the domain is paired with exactly one element of the range. 
+
+The domain is the set of input values, while the range is the set of output values.
+
+For example $f(x)=x^2-1$ is a function.
+\begin{itemize}
+\item $f$ is the name of the function.
+\item $x$ is the input variable or independent variable.
+\item  $x^2-1$ is the output expression or dependent variable.
+\item $f(x)$ denotes the ouput expression or dependent variable.
+\item In set notation we would write $f=\{(x,x^2-1)\mid x\text{ is a real number}\}$.
+\item The natural domain of $f$ is all real numbers.
+\item The range of $f$ is $\{y\mid y\ge-1\}$.
+\end{itemize}
+
+
+
+
+
+
+
+
+\end{document}
