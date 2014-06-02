@@ -1,0 +1,64 @@
+\documentclass{ximera}
+%% handout
+%% nohints
+%% space
+%% newpage
+%% numbers
+
+\input{preamble.tex} %% we can turn off input when making a master document
+
+\prerequisites{none}
+\outcomes{ximeraLatex}
+
+\title{Inverse Functions}
+
+\begin{document}
+\begin{abstract}
+We learn how to find an inverse function.
+\end{abstract}
+\maketitle
+
+In some cases two variables are related in such a way that either could determine the value of the other. For example, if $A$ is the area of a square and $x$ is the side length of a square then $A=x^2$ ($x\ge0$) and $x=\sqrt{A}$. Thus $A$ is a function of $x$ and $x$ is a function of $A$.
+
+We call two variables that are each functions of each other \emph{inverse functions}. It would be appropriate to use function notation: $A=A(x)=x^2$ and $x=x(A)=\sqrt{A}$. Note that when we compose these two functions we are just left with the input. 
+
+Inverse functions are not hard to find, but we will definitely take advantage of the tools available to us. 
+
+\begin{question}
+We want to find the inverse function of $f(x)=\frac{2x}{x-1}$.
+Go to \url{wolframalpha.com} and type in \verb|inverse function f(x)=2x/(x-1)| to see the output.
+\begin{solution}
+$f^{-1}(x)=$ \answer{$x/(x-2)$}
+\begin{hint}
+By default Wolfram Alpha assumes the input to both functions is $x$.
+\end{hint}
+\begin{hint}
+Be sure to group the denominator of a fraction inside parentheses.
+\end{hint}
+\end{solution}
+\end{question}
+
+
+
+\begin{question}
+Consider the function that converts the temperature from Celcius to Fahrenheit. 
+\[
+F=\frac{9}{5}C+32.
+\]
+We want to find the function that converts the temperature from Fahrenheit to Celcius.
+
+You can solve for $C$, but instead please use \url{wolframalpha.com} to do it for you.
+
+\begin{solution}
+$C=$ \answer{$5/9*(F-32)$}
+\begin{hint}
+Just enter \verb|solve for x, y=9/5*x+32| in \url{wolframalpha.com}. Then substitute $x=C$ and $y=F$. Wolfram Alpha tries to be too clever if you leave in the $C$ and $F$.
+\end{hint}
+\end{solution}
+
+In summary, we get an inverse function, when we swap the roles of the dependent variable and the independent variable. Not all functions have an inverse---only functions where each output is paired with a single input have an inverse.
+\end{question}
+
+
+
+\end{document}

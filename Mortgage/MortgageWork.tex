@@ -1,0 +1,84 @@
+\documentclass{ximera}
+%% handout
+%% nohints
+%% space
+%% newpage
+%% numbers
+
+\input{preamble.tex} %% we can turn off input when making a master document
+
+\prerequisites{none}
+\outcomes{ximeraLatex}
+
+\title{Mortgage Payments}
+
+\begin{document}
+\begin{abstract}
+We learn to calculate mortgage payments.
+\end{abstract}
+\maketitle
+
+In this activity we will explore a tool to help us calculate the value of a mortgage payment under various conditions. We need to be familiar with the following terms.  
+
+A mortgage is a loan that finances the purchase of a home. A mortgage can be repaid under a variety of conditions. The balance of the mortgage is the amount of money that must be repaid. The interest rate is the portion of the balance that must be paid to the lender each year. The term of the loan is the number of years until the loan must be repaid.
+
+A loan with a down-payment of less than $20\%$ of the cost typically involves a charge called principal mortgage insurance, or PMI. The PMI will usually be dropped after $20\%$ of the mortgage has been paid off.
+
+Open the website \url{http://www.mortgagecalculator.org/} in a separate window. 
+
+\begin{question}
+Calculate the mortgage under the following conditions:
+\begin{description}
+\item[Home Value:] \$$200,000$
+\item[Credit profile:] Good
+\item[Loan amount:] \$$190,000$
+\item[Loan Purpose:] New Purchase
+\item[Interest rate:] $4$\%
+\item[Loan term:] $30$ years
+\item[Start Date:] Jan 2017
+\item[Property tax:] $1.25$\%
+\item[PMI:] $0.5$\%
+\end{description}
+
+The monthly payment for this loan is \$\answer{1115.42}.
+
+The year when the PMI is paid off is \answer{2024}.
+
+The first year when the amount of principal paid excedes the amount of interest paid is \answer{2030}
+
+\begin{hint}
+To see the amortization schedule click on the link for output parameters and check the box next to ``Show annual amortization table''.
+\end{hint}
+\end{question}
+
+
+\begin{question}
+Which of the following conditions will result in the lowest monthly premium?
+\begin{solution}
+\begin{multiple-choice}
+\choice[correct]{$4\%$ interest for a 30-year term}
+\choice{$4\%$ interest for a 20-year term}
+\choice{$5\%$ interest for a 20-year term}
+\choice{$5\%$ interest for a 30-year term}
+\end{multiple-choice}
+\begin{hint}
+Try running all four scenarios keeping all the other conditions the same.
+\end{hint}
+\end{solution}
+\end{question}
+
+\begin{question}
+Which of the following conditions will result in the lowest total payout for the loan?
+\begin{solution}
+\begin{multiple-choice}
+\choice[correct]{$4\%$ interest for a 20-year term}
+\choice{$4\%$ interest for a 30-year term}
+\choice{$5\%$ interest for a 20-year term}
+\choice{$5\%$ interest for a 30-year term}
+\end{multiple-choice}
+\end{solution}
+\end{question}
+
+
+
+\end{document}

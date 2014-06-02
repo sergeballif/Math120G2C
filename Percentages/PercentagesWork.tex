@@ -1,0 +1,118 @@
+\documentclass{ximera}
+%% handout
+%% nohints
+%% space
+%% newpage
+%% numbers
+
+\input{preamble.tex} %% we can turn off input when making a master document
+
+\prerequisites{none}
+\outcomes{ximeraLatex}
+
+\title{How to compute percentages.}
+
+\begin{document}
+\begin{abstract}
+We review the concept of percentages and introducte \protect\url{ConsumerMath.org}.
+\end{abstract}
+\maketitle
+
+
+The word \emph{percent} means ``for each hundred.'' For example, saying Joseph earns $60\%$ as much as Elaine is saying he earns $\$60$ for each $\$100$ she earns.
+
+To calculate a percentage, the relationship between the amount that constitutes the whole, called the \emph{reference amount} and the amount under consideration must be found. This is done via the following formula:
+
+\begin{equation}\label{basicpercentage}
+\text{Percentage}=\frac{\text{Part}}{\text{Whole}}\times 100
+\end{equation}
+
+As an example,
+\begin{equation*}
+\frac{15}{25}\times 100=60
+\end{equation*}
+means that $15$ is $60\%$ of $25$.
+
+The relationship in equation (\ref{basicpercentage}) can be used to find any of the three pieces -- the percentage, the part, the whole -- if the other two are known by using algebra to solve for the missing piece.
+
+As an example, to find $70\%$ of $220$
+\begin{align*}
+70&=\frac{\text{Part}}{220}\times 100\\
+70\div 100 &=\frac{\text{Part}}{220}\\
+0.70\times 220 &=\text{Part}\\
+154&=\text{Part}
+\end{align*}
+and so $70\%$ of $220$ is $154$.
+
+\newcommand\customfont[1]{{\usefont{T1}{custom}{m}{n} #1 }}
+
+\begin{question}
+The label on a 12 oz.\ can of \customfont{Coca-Cola}\ states that it contains 39 grams of carbohydrates, accounting for $13\%$ of the recommended daily value. How many grams of carbohydrates are recommended daily?
+
+\begin{solution}
+\begin{hint}
+\begin{equation*}13=\frac{39}{\emph{\text{Whole}}}\times 100\end{equation*}
+\end{hint}
+\begin{expression-answer}
+function validator(p) {
+    if (p == 300)
+      return 1;
+    if (p <> 300)
+      return 0;
+  }
+\end{expression-answer}
+\end{solution}
+
+Nice work!
+\end{question}
+
+\begin{question}
+For fiscal years 2013--2015, the Nevada legislature appropriated $9.0\%$ of its $\$20.1$ billion budget to infrastructre. How much was appropriated for infrastructure? 	
+
+\begin{solution}
+\begin{hint}
+\begin{equation*}9=\frac{\emph{\text{Part}}}{\$20.1\emph{\text{ billion}}}\times 100\end{equation*}
+\end{hint}
+\begin{hint}
+If you use $\$20,100,000,000$ in your calculations, your answer will be in dollars. If you use $\$20.1$ in your calculations, your answer will be in billions of dollars.
+\end{hint}
+\begin{expression-answer}
+function validator(p) {
+    if (p - 1.809) &lt; 0.01)
+      return 1;
+    if (p - 1809000000 &lt; 10000000)
+      return 1;
+      return 0;
+  }
+\end{expression-answer}
+\end{solution}	
+
+Nice work!
+\end{question}
+
+\begin{question}
+If my taxi fare is $\$25.50$ and I pay the driver $\$30$, what percent tip am I giving?
+  \begin{solution}
+    \begin{multiple-choice}
+    	\choice{$85\%$}
+        \choice{$20\%$}
+        \choice[correct]{$17.6\%$}
+        \choice{$15\%$}
+        \choice{$1.2\%$}
+    \end{multiple-choice}
+    \begin{hint}
+    What is the \emph{amount} of the tip? This is your \emph{part}.
+    \end{hint}
+    \begin{hint}
+   What is the amount of the basic fare? This is your \emph{whole}.
+    \end{hint}
+  	\begin{hint}
+    \begin{equation*}\emph{\text{Percentage}}=\frac{\emph{\text{Part}}}{\emph{\text{Whole}}}\times 100\end{equation*}
+    \end{hint}
+  \end{solution}
+\end{question}
+
+A significant piece of the Consumer Mathematics portion of this course involves the use of a financial simulator at \url{ConsumerMath.org}.
+
+
+\end{document}

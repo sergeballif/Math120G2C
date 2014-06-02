@@ -1,0 +1,125 @@
+\documentclass{ximera}
+%% handout
+%% nohints
+%% space
+%% newpage
+%% numbers
+
+\input{preamble.tex} %% we can turn off input when making a master document
+
+\prerequisites{none}
+\outcomes{ximeraLatex}
+
+\title{What is probability?}
+
+\begin{document}
+\begin{abstract}
+We define the concept of proability.
+\end{abstract}
+\maketitle
+
+The basic idea of probability is that it measures the chance that something will happen. You may be familiar with the joke that everything is 50-50 because it either happens or it doesn't! Embedded in this joke is an application of the basic formula for probability (and an example of a common error that is made).
+
+An \emph{experiment} in probability theory is some repeatable procedure that will result in a randomized outcome. Examples of experiments include flipping a coin, rolling dice, drawing from a deck of cards, or picking balls out of an urn (any type of container will do, but mathematicians usually use urns).
+
+If we roll a standard 6-sided die, there are six possible outcomes, which we will denote with the following notation:
+\[ \{ 1, 2, 3, 4, 5, 6 \} \]
+The list of all possible outcomes is known as the \emph{sample space} of an experiment. Notice that we have used curly brackets around the list and that the outcomes are separated by a comma. (This is known as a set.) The individual outcomes are known as the \emph{events}.
+
+If the die has not been tampered with, then all of the outcomes are \emph{equiprobable}, meaning that the chance of each number coming up is the same. In this case, there is a simple formula that we can use to determine the probability:
+\[ P(X) = \dfrac{ \text{ \# of successes }}{ \text{\# of possibilities } } \]
+
+In this formula, ``$P(X)$'' is read ``The probability of event $X$.'' The symbol $X$ represents a description of a type of event, so that $X$ could be phrases like ``rolling a 1'' or ``rolling an even number.''
+
+A \emph{success} simply means that the outcome of the experiment matches described event, and the \# of possibilities is simply a count of all of the possible outcomes of the experiment.
+
+Consider the following examples for the dice rolling experiment above:
+\begin{itemize}
+  \item If $X = ``\text{rolling a 1}''$ then $P(X) = \dfrac{1}{6} \approx 16.7\%$ because there is only one way to roll a 1 and six possible outcomes when rolling a die.
+  \item If $X = ``\text{rolling an even number}''$ then $P(X) = \dfrac{3}{6} = \dfrac{1}{2} = 50\%$ because there are three ways to roll an even number and six possible outcomes when rolling a die.
+\end{itemize}
+
+Sometimes we convert the fraction to a decimal or a percent, but there are many situations in which we leave it as a fraction. You will need to be able to work with all of these situations.
+
+Now let's consider an urn that contains 999 red balls and 1 black ball. The sample space for this experiment is $\{ \text{red}, \text{black} \}$. If we're not careful, this may make it look as if there are only two possible outcomes for the experiment. If that were true, then the probability of drawing a black ball and a red ball would be
+\[ P(\text{black}) = \dfrac{1}{2} = 50\% \hspace{15pt} \text{ and } \hspace{15pt} P(\text{red}) = \dfrac{1}{2} = 50\%. \]
+But intuitively, we know that the chance of drawing a red ball is much larger than the chance of drawing a black ball. What is going wrong?
+
+The mistake is that the sample space does not include any information of the probabilities themselves, just the outcomes. Drawing a red ball and drawing a black ball are not equiprobable. When we count the number of possible outcomes, we need to count each individual ball (so that there are 1000 possible outcomes) and not just the colors. Once we do this, we get numbers that match our expectations.
+\[ P(\text{black}) = \dfrac{1}{1000} = 0.1\% \hspace{15pt} \text{ and } \hspace{15pt} P(\text{red}) = \dfrac{999}{1000} = 99.9\%. \]
+
+And this explains why not every event is 50-50.
+
+%%% VIDEO: Two sample problems
+
+\begin{question}
+Suppose you flip a coin. What are possible representations of the sample space of the experiment? (There are multiple correct answers.)
+  \begin{solution}
+    \begin{multiple-choice}
+      \choice{50\% heads, 50\% tails }
+      \choice[correct]{$\{ \text{heads}, \text{tails} \}$}
+      \choice[correct]{$\{ \text{T}, \text{H} \}$ }
+      \choice{$\{ \text{50\% heads}, \text{50\% tails} \}$ }
+      \choice{$P(\text{tails}) = \dfrac{1}{2}, P(\text{heads}) = \dfrac{1}{2}$}
+      \choice{Heads, Tails}
+      \end{multiple-choice}
+    \begin{hint}
+    The sample space of an experiment is a list of all the possible outcomes.
+    \end{hint}
+    \begin{hint}
+    The sample space does not include information about the probabilities.
+    \end{hint}
+    \begin{hint}
+    Sample spaces are sets, so they require the use of set notation.
+    \end{hint}
+  \end{solution}
+\end{question}
+
+\begin{question}
+Suppose you roll a standard 6-sided die. What is the probability of rolling a number greater than 4? (There are multiple correct answers.)
+  \begin{solution}
+    \begin{multiple-choice}
+      \choice{$\dfrac{2}{3}$}
+      \choice[correct]{$\dfrac{1}{3}$}
+      \choice{$\dfrac{1}{2}$}
+      \choice{$\dfrac{3}{6}$}
+      \choice[correct]{$\dfrac{2}{6}$ }
+      \choice{$\dfrac{2}{4}$}
+      \choice{$\dfrac{4}{6}$}
+      \end{multiple-choice}
+    \begin{hint}
+    $P(X) = \dfrac{ \text{ \# of successes }}{ \text{\# of possibilities } }$
+    \end{hint}
+    \begin{hint}
+    Did you try reducing the fraction?
+    \end{hint}
+  \end{solution}
+\end{question}
+
+\begin{question}
+Suppose you have an urn containing 30 red balls and 20 black balls. What is the probability of drawing a red ball?
+  \begin{solution}
+    \begin{multiple-choice}
+      \choice{---$50\%$ }
+      \choice[correct]{---$\dfrac{3}{5}$ }
+      \choice{---$\dfrac{30}{20}$}
+      \choice[correct]{---$\dfrac{30}{50}$}
+      \choice{---$\dfrac{1}{2}$}
+      \choice{---$30:20$}
+      \choice[correct]{---$60\%$ }
+      \end{multiple-choice}
+    \begin{hint}
+    $P(X) = \dfrac{ \text{ \# of successes }}{ \text{\# of possibilities } }$
+    \end{hint}
+    \begin{hint}
+    Did you try reducing the fraction?
+    \end{hint}
+    \begin{hint}
+    Did you try converting the fraction to a percent?
+    \end{hint}
+  \end{solution}
+\end{question}
+
+
+
+\end{document}

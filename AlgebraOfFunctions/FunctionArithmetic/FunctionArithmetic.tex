@@ -1,0 +1,109 @@
+\documentclass{ximera}
+%% handout
+%% nohints
+%% space
+%% newpage
+%% numbers
+
+\input{preamble.tex} %% we can turn off input when making a master document
+
+\prerequisites{none}
+\outcomes{ximeraLatex}
+
+\title{Function Arithmetic}
+
+\begin{document}
+\begin{abstract}
+We add, subtract, multiply, and divide functions.
+\end{abstract}
+\maketitle
+
+
+We can add or subtract functions to obtain new functions. For example if $f(x)=x^2-2$ and $g(x)=x+3$ then 
+\[
+f(x)+g(x)=[x^2-2]+[x+3]=x^2+x+1,\qquad\text{and}\qquad f(x)-g(x)=[x^2-2]-[x+3]=x^2-x-5
+\]
+
+\begin{question}
+Let $f(x)=2-x$ and $g(x)=x^2+2x$. Then
+\begin{solution}
+\begin{hint}
+Just compute $[2-x]+[x^2+2x]$
+\end{hint}
+$f(x)+g(x)=$ \answer{$x^2+x+2$}.
+
+\begin{hint}
+Just compute $[2-x]-[x^2+2x]$
+\end{hint}
+$f(x)-g(x)=$ \answer{$-x^2-3x+2$}.
+\end{solution}
+\end{question}
+
+\begin{question}
+Let $f(x)$ be the function that gives the area of the rectangle below and $g(x)$ be the function that gives the area of the triangle inside the rectangle. 
+\begin{image}
+\begin{tikzpicture}
+\draw[fill=gray!20] (0,0) --node[below]{$3x$} (3,0) -- node[right]{$2x$} (3,2) -|(0,0);
+\draw[rotate=30,fill=white] (0,0) --node[below right=-.1cm]{$2x$} (2,0) --node[right]{$x$} (2,1) -- (0,0) (2,0) rectangle ++(-.2,.2);
+\end{tikzpicture}
+\end{image}
+
+Find a formula for each function.
+
+\begin{solution}
+\begin{hint}
+The area of a rectangle is length times width.
+\end{hint}
+$f(x)=$ \answer{$6x^2$}.
+
+\begin{hint}
+The area of a triangle is one half base times height.
+\end{hint}
+$g(x)=$ \answer{$x^2$}.
+
+What does the function $h(x)=f(x)-g(x)$ represent geometrically?
+\begin{multiple-choice}
+\choice{---the combined perimeter of both figures}
+\choice{---the area of both figures}
+\choice[correct]{---the area of the shaded region}
+\choice{---half of the total area}
+\end{multiple-choice}
+\begin{hint}
+What do $f$ and $g$ represent? 
+\end{hint}
+
+$h(2)=$ \answer{$20$}
+\end{solution}
+\end{question}
+
+We can obtain new functions by multiplying and dividing functions as well. 
+For example if $f(x)=x^2-2$ and $g(x)=x+3$ then 
+\[
+f(x)g(x)=[x^2-2][x+3]=[x^2-2]\cdot x+[x^2-2]\cdot 3=x^3-2x+3x^2-6,
+\]
+and
+\[
+\frac{f(x)}{g(x)}=\frac{x^2-2}{x+3}.
+\]
+
+
+\begin{question}
+Let $w(t)$ and $l(t)$ be the functions that gives the width and length of a rectangle at time $t$.
+
+What does the function $h(t)=w(t)l(t)$ represent geometrically?
+
+\begin{solution}
+\begin{multiple-choice}
+\choice{---the perimeter of the rectangle at time $t$}
+\choice{---the length of the diagonal of the rectangle at time $t$}
+\choice[correct]{---the area of the rectangle at time $t$}
+\choice{---the difference between the width and length at time $t$}
+\end{multiple-choice}
+\begin{hint}
+What do you get when you multiply the length and the width of a rectangle? 
+\end{hint}
+
+\end{solution}
+\end{question}
+
+\end{document}

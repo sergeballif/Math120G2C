@@ -1,0 +1,121 @@
+\documentclass{ximera}
+%% handout
+%% nohints
+%% space
+%% newpage
+%% numbers
+
+\input{preamble.tex} %% we can turn off input when making a master document
+
+\prerequisites{none}
+\outcomes{ximeraLatex}
+
+\title{Simple Interest}
+
+\begin{document}
+\begin{abstract}
+We introduce the procedures for calculating interest.
+\end{abstract}
+\maketitle
+
+
+\emph{Interest} is an amount of money paid to a lender for the privilige of borrowing money. The amount borrowed is called the \emph{principal} and the interest one pays is calculated according to an \emph{interest rate}, which is a percentage of the principal that will be charged as interest. The \emph{term} is the length of time the loan is in use.
+
+As an example, suppose Stephen borrows $\$1,000$ from Joanna now with the agreement that in one year he will pay her back $\$1,100$. This means that in addition to the $\$1,000$ principal, Stephen will also be paying
+$$
+\frac{\$1,100-\$1,000}{\$1,000}=\frac{\$100}{\$1,000}=10\%
+$$
+$10\%$ interest. Usually, interest is given as an \emph{annual interest rate}. For example, suppose Stephen had borrowed $\$1,000$ from Joanna now with the agreement that in $6$ months he will pay her $\$1,100$. Then the interest rate Stephen is paying is
+$$
+10\%\div \frac{1}{2}=20\%
+$$
+because 6 months is only half a year, meaning if he didn't pay her back for 12 months he'd owe her $\$1,200$ instead of $\$1,100$, representing an additional $\$100$ or $10\%$ in interest.
+
+This type of interest, where a specific percentage of the principal is computed for a specific length of time, is called \emph{simple interest}. The general formula for simple interest is
+\begin{equation}\label{simpleinterest}
+\text{Interest}=\text{Principal}\times\text{annual interest rate}\times\text{loan term}
+\end{equation}
+This is usually expressed in the more compact form $I=Prt$.
+
+Example: Find the amount of simple interest charged on a loan of $\$5,000$ at $7.9\%$ annually for 30 months.
+$$
+I=\$5,000\times 0.079\times 2.5=\$987.50
+$$
+Note that the percentage rate is converted to a decimal ($7.9\%=0.079$) and the loan term is expressed in years. As there are 12 months in a year, 30 months is $\dfrac{30}{12}=2.5$ years.
+
+\begin{question}
+How many months will it take for simple interest of $\$500$ to be due on a loan of $\$10,000$ at an annual rate of $8\%$? 	
+
+\begin{solution}
+\begin{hint}
+Solve for $t$ in the equation
+\begin{equation*}\$500=\$10,000\times 0.08\times t\end{equation*}
+\end{hint}
+\begin{hint}
+Convert your answer to months by multiplying it by 12.
+\end{hint}
+\begin{expression-answer}
+function validator(p) {
+    if (p == 7.5)
+      return 1;
+    if (p == 7) {feedback( `Don't round your answer.')
+    }
+    if (p == 8) {feedback( `Don't round your answer.')
+    }
+      return 0;
+  }
+\end{expression-answer}
+\end{solution}	
+
+Nice work!
+\end{question}
+
+In addition to paying interest, a person can also earn interest! When you save your money in the bank, the bank uses some of that money to make loans that generate interest. Because the bank is using your money, you've essentially given the bank a loan and will usually receive some interest of your own. The amount of this interest is usually far less than the amount of interest your money generates for the bank, typically only about $1\%$, but \emph{c'est la vie!}
+
+\begin{question}
+What percentage simple interest rate is needed to grow a $\$50$ initial investment into $\$70$ in 2 years?
+
+\begin{solution}
+\begin{hint}
+How much interest does it take to grow $\$50$ into $\$70$?
+\end{hint}
+\begin{hint}
+Solve for $r$ in the equation
+\begin{equation*}\$20=\$50\times r\times 2\end{equation*}
+\end{hint}
+\begin{hint}
+What \emph{percentage} does your answer represent?
+\end{hint}
+\begin{expression-answer}
+function validator(p) {
+    if (p == 20)
+      return 1;
+    if (p == 0.2) {feedback( `What percentage does this value represent?')
+    }
+    if (p == 2) {feedback( `How would you represent $2\%$ as a decimal? Does this match your answer?')
+    }
+      return 0;
+  }
+\end{expression-answer}
+\end{solution}	
+
+Nice work! If you ever find a bank offering that interest rate, call me immediately!
+\end{question}
+
+\begin{question}
+Which of the following would earn the largest dollar amount for a given principal?
+  \begin{solution}
+    \begin{multiple-choice}
+    	\choice{An investment paying $3\%$ annual simple interest for 4 years?}
+        \choice{An investment paying $4\%$ annual simple interest for 3 years?}
+        \choice{An investment paying $13\%$ annual simple interest for 1 year?}
+        \choice{An investment paying $1\%$ annual simple interest for 10 years?}
+        \choice[correct]{An investment paying $2\%$ annual simple interest for 7 years?}
+    \end{multiple-choice}
+    \begin{hint}
+    Choose a principal that's easy to work with, like $\$100$.
+    \end{hint}
+  \end{solution}
+\end{question}
+
+\end{document}
